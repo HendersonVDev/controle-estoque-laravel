@@ -1,0 +1,23 @@
+
+  #calendar {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Reforça as bordas no calendário mesmo com Bootstrap */
+.fc .fc-scrollgrid,
+.fc .fc-scrollgrid td,
+.fc .fc-scrollgrid th {
+  border: 1px solid #9fa0a1; /* mesma cor de borda do Bootstrap */
+  text-align: left;
+}
+
+.fc .fc-daygrid-day {
+  border: 1px solid #9fa0a1;
+  text-align: right!important;
+}
+
+.fc .fc-scrollgrid {
+  border-collapse: collapse;
+}
+

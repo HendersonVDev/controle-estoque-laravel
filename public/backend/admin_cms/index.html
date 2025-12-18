@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <meta name="csrf-token" content="">
+  <title>Painel Administrativo  &mdash;</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons.min.css">
+  <link rel="stylesheet" href="assets/modules/weather-icon/css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="assets/modules/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets/modules/jquery-selectric/selectric.css">
+
+  <!-- CSS DATATABLE -->
+  <link rel="stylesheet" href="//cdn.datatables.net/2.0.6/css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.6/css/dataTables.bootstrap5.css">
+
+
+  <!-- CSS Toastr -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+
+  <!-- Favicons -->
+	<link rel="icon" type="assets/image/png" href="https://maykonsilveira.com.br/assets/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="https://maykonsilveira.com.br/assets/icon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://maykonsilveira.com.br/assets/icon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://maykonsilveira.com.br/assets/icon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://maykonsilveira.com.br/assets/icon/apple-touch-icon-144x144.png">
+
+  <!-- ICONES -->
+  <link rel="stylesheet" href="assets/css/bootstrap-iconpicker.min.css">
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class=""></div>
+      <!-- START NAVABAR - MAYKONSILVEIRA.COM.BR -->
+      <style>
+        .btn-primary{
+            background-color:#3df5f5;
+            border:none;
+        }
+
+        .btn-primary:hover{
+            background-color:#3df5f5!important;
+            border:none;
+        }
+
+
+    </style>
+
+    <nav class="navbar navbar-expand-lg main-navbar" style="background-color:#3df5f5!important;
+            color:#fff!important; position:inherit;">
+        <form class="form-inline mr-auto ">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+        </form>
+        <ul class="navbar-nav navbar-right" >
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Mensagens
+                <div class="float-right">
+                  <a href="#">Leia todas</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-message">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="assets/img/avatar/avatar-1.png" class="rounded-circle">
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b></b>
+                    <p></p>
+                    <div class="time">07 Setembro 2025</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="assets/img/avatar/avatar-2.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Maykon</b>
+                    <p>Fala dev!</p>
+                    <div class="time">07 Setembro 2025</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="assets/img/avatar/avatar-3.png" class="rounded-circle">
+                    <div class="is-online"></div>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Maykon</b>
+                    <p>Fala dev!</p>
+                    <div class="time">07 Setembro 2025</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="assets/img/avatar/avatar-4.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Maykon</b>
+                    <p>Fala dev!</p>
+                    <div class="time">07 Setembro 2025</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-avatar">
+                    <img alt="image" src="assets/img/avatar/avatar-5.png" class="rounded-circle">
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Maykon</b>
+                    <p>Fala dev!</p>
+                    <div class="time">07 Setembro 2025</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Veja todas <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+            <div class="dropdown-menu dropdown-list dropdown-menu-right">
+              <div class="dropdown-header">Notificações
+                <div class="float-right">
+                  <a href="#">Leia tudo</a>
+                </div>
+              </div>
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class="dropdown-item dropdown-item-unread">
+                  <div class="dropdown-item-icon bg-primary text-white">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    Sou msdev 3
+                    <div class="time text-primary">2 Min</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-info text-white">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Sou</b> msdev 3 <b>do canal</b>Maykon Silveira
+                    <div class="time">10 horas</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-success text-white">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Sou</b> msdev 3 <b>do canal</b>Maykon Silveira
+                    <div class="time">10 horas</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-danger text-white">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Sou</b> msdev 3 <b>do canal</b>Maykon Silveira
+                    <div class="time">10 horas</div>
+                  </div>
+                </a>
+                <a href="#" class="dropdown-item">
+                  <div class="dropdown-item-icon bg-info text-white">
+                    <i class="fas fa-bell"></i>
+                  </div>
+                  <div class="dropdown-item-desc">
+                    <b>Sou</b> msdev 3 <b>do canal</b>Maykon Silveira
+                    <div class="time">10 horas</div>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer text-center">
+                <a href="#">Veja tudo <i class="fas fa-chevron-right"></i></a>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+
+            <img  src="assets/img/avatar/avatar-1.png" class="rounded-circle mr-1" alt="">
+
+
+            <div class="d-sm-none d-lg-inline-block">Maykon</div></a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title"></div>
+              <a href="" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Perfil
+              </a>
+              <a href="redes-sociais.index" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Redes Sociais
+              </a>
+              <a href="configura-email.index" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Configurações
+              </a>
+              <div class="dropdown-divider"></div>
+              <!-- Authentication -->
+              <form action="logout" method="post">
+
+              <a href="logout" onclick="event.preventDefault(); this.closest('form').submit();" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Sair
+              </a>
+            </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- END NAVBAR  -->
+
+      <!-- START SIDEBAR -->
+      <style>
+        .main-sidebar, .sidebar-style-2 li a{
+            background-color:#3df5f5;
+            color:#fff!important;
+        }
+
+        .nav-link{
+            background-color:#3df5f5!important;
+            color:#fff!important;
+        }
+
+        .main-sidebar li a:hover{
+            color:#fff!important;
+            background-color:#3df5f5!important;
+        }
+
+    </style>
+    <div class="main-sidebar sidebar-style-2" >
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="admin.dashboard" style="color:#fff; font-weight:900; font-size:24px;">HV</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="admin.dashboard">MS</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Painel</li>
+            <li class="dropdown ">
+              <a href="admin.dashboard" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Painel</span></a>
+              <ul class="dropdown-menu">
+                <li ><a class="nav-link painelms" href="admin.dashboard">Página Inicial</a></li>
+                <li ><a class="nav-link painelms" href="configuracao.editar">Configurações</a></li>
+                <li ><a class="nav-link painelms" href="configura-email.index">Configuração E-mail</a></li>
+                <li class=""><a class="nav-link painelms" href="slider.index">Slide Destaque</a></li>
+                <li class=""><a class="nav-link painelms" href="redes-sociais.index">Redes Sociais</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-header">Posts</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-newspaper"></i> <span>Gerencie Notícias</span></a>
+              <ul class="dropdown-menu">
+                <li class=""><a class="nav-link painelms" href="posts.index">Posts</a></li>
+                <li class=""><a class="nav-link painelms" href="posts.create">Criar Post</a></li>
+                <li class=""><a class="nav-link painelms" href="categoria-posts.index">Categorias</a></li>
+                <li class=""><a class="nav-link painelms" href="categoria-posts.create">Criar Categoria</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-header">Páginas</li>
+            <li class="dropdown ">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Gerencie Páginas</span></a>
+              <ul class="dropdown-menu">
+                <li class=""><a class="nav-link painelms" href="paginas.index">Listar Páginas</a></li>
+                <li class=""><a class="nav-link painelms" href="paginas.create">Criar Página</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-header">Vídeos</li>
+            <li class="dropdown ">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-play" aria-hidden="true"></i> <span>Gerencie Vídeos</span></a>
+              <ul class="dropdown-menu">
+                <li class=""><a class="nav-link painelms" href="videos.index">Listar Vídeos</a></li>
+                <li class=""><a class="nav-link painelms" href="videos.create">Criar Vídeo</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-header">Depoimentos</li>
+            <li class="dropdown ">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-heart"></i> <span>Gerencie depoimentos</span></a>
+              <ul class="dropdown-menu">
+                <li class=""><a class="nav-link painelms" href="depoimentos.index">Listar</a></li>
+                <li class=""><a class="nav-link painelms" href="depoimentos.create">Criar</a></li>
+              </ul>
+            </li>
+
+            <li class="menu-header">Serviços</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-check-square"></i> <span>Gerencie serviços</span></a>
+              <ul class="dropdown-menu">
+                <li class=""><a class="nav-link painelms" href="servicos.index">Listar</a></li>
+                <li class=""><a class="nav-link painelms" href="servicos.create">Criar</a></li>
+              </ul>
+            </li>
+
+
+            <li class="menu-header">Usuários</li>
+            <li class="dropdown ">
+              <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fa fa-user-circle"></i> <span>Gerencie usuarios</span></a>
+              <ul class="dropdown-menu">
+                <li class=""><a class="nav-link painelms" href="">Listar</a></li>
+                <li class=""><a class="nav-link painelms" href="">Criar</a></li>
+              </ul>
+            </li>
+            <br>
+            <br>
+            <br>
+            <br>
+        </ul>
+
+        </aside>
+      </div>
+
+      <!-- END SIDEBAR - MAYKONSILVEIRA.COM.BR -->
+
+      <!-- START MAIN CONTENT - MAYKONSILVEIRA.COM.BR -->
+      <div class="main-content">
+
+
+
+
+        <section class="section">
+            <div class="section-header">
+              <h1>Painel de Controle</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                  <div class="card-icon bg-primary">
+                    <i class="far fa-user"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4>Total Admin</h4>
+                    </div>
+                    <div class="card-body">
+                      7
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                  <div class="card-icon bg-danger">
+                    <i class="far fa-newspaper"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4>Notícias</h4>
+                    </div>
+                    <div class="card-body">
+                       7
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                  <div class="card-icon bg-warning">
+                    <i class="far fa-file"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4>Páginas</h4>
+                    </div>
+                    <div class="card-body">
+                        7
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="card card-statistic-1">
+                  <div class="card-icon bg-success">
+                    <i class="fa fa-check-square" style="font-size:23px; color:#fff;"></i>
+                  </div>
+                  <div class="card-wrap">
+                    <div class="card-header">
+                      <h4>Total Serviços</h4>
+                    </div>
+                    <div class="card-body">
+                      7
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- FIM CONTADORES  -->
+
+
+          <!-- INICIO ESTATISTICAS   -->
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Estatísticas Painel</h4>
+                </div>
+                <div class="card-body">
+                  <canvas id="msflixChat" height="182"></canvas>
+                </div>
+              </div>
+            </div>
+          <!-- FIM ESTATISTICAS   --->
+
+
+
+</section>
+
+
+        <script>
+        var ctx = document.getElementById("msflixChat").getContext('2d');
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ["Visitas Notícias", "Visitas Paginas", "Categorias Notícias"],
+            datasets: [{
+              label: 'Statísticas msflix',
+              data: [55, 67, 77],
+              borderWidth: 2,
+              backgroundColor: '#6777ef',
+              borderColor: '#6777ef',
+              borderWidth: 2.5,
+              pointBackgroundColor: '#ffffff',
+              pointRadius: 4
+            }]
+          },
+          options: {
+            legend: {
+              display: false
+            },
+            scales: {
+              yAxes: [{
+                gridLines: {
+                  drawBorder: false,
+                  color: '#f2f2f2',
+                },
+                ticks: {
+                  beginAtZero: true,
+                  stepSize: 150
+                }
+              }],
+              xAxes: [{
+                ticks: {
+                  display: false
+                },
+                gridLines: {
+                  display: false
+                }
+              }]
+            },
+          }
+        });
+        </script>
+
+
+
+      </div>
+      <!-- END MAIN CONTENT - MAYKONSILVEIRA.COM.BR -->
+
+      <!-- START FOOTER - MAYKONSILVEIRA.COM.BR -->
+      <footer class="main-footer">
+        <div class="footer-left">
+          Todos os Direitos Reservados &copy; 2050 <div class="bullet"></div> Desenvolvido <a href="">Henderson Vieira</a> Versão 1.0
+        </div>
+        <div class="footer-right">
+
+        </div>
+      </footer>
+      <!-- END FOOTER - MAYKONSILVEIRA.COM.BR -->
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets/modules/jquery.min.js"></script>
+  <script src="assets/modules/popper.js"></script>
+  <script src="assets/modules/tooltip.js"></script>
+  <script src="assets/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets/modules/moment.min.js"></script>
+  <script src="assets/js/stisla.js"></script>
+
+  <!-- JS Libraies -->
+  <script src="assets/modules/simple-weather/jquery.simpleWeather.min.js"></script>
+  <script src="assets/modules/chart.min.js"></script>
+  <script src="assets/modules/jqvmap/dist/jquery.vmap.min.js"></script>
+  <script src="assets/modules/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="assets/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+  <script src="assets/modules/upload-preview/assets/js/jquery.uploadPreview.min.js"></script>
+  <script src="assets/modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="assets/js/page/features-post-create.js"></script>
+  <script src="assets/modules/jquery-selectric/jquery.selectric.min.js"></script>
+
+  <!-- JS DATATABLE -->
+ <script src="//cdn.datatables.net/2.0.6/js/dataTables.min.js"></script>
+ <script src="https://cdn.datatables.net/2.0.6/js/dataTables.bootstrap5.js"></script>
+
+  <!-- JS SWEET -->
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- JS Toastr -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <!-- ICONES -->
+  <script src="assets/js/bootstrap-iconpicker.bundle.min.js"></script>
+
+
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/index-0.js"></script>
+
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/jmask.js"></script>
+
+
+
+
+
+<script>
+$(document).ready(function(){
+
+$.ajaxSetup({
+headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+}
+});
+
+$('body').on('click', '.delete-item', function(event){
+event.preventDefault();
+
+let deleteUrl = $(this).attr('href');
+
+Swal.fire({
+  title: "Tem certeza?",
+  text: "Você não poderá reverter isso!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#1e5e2f",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Sim, exclua-o!"
+}).then((result) => {
+  if (result.isConfirmed) {
+
+    $.ajax({
+        type: 'DELETE',
+        url: deleteUrl,
+
+        success: function(data){
+
+            if(data.status == 'success'){
+
+                Swal.fire({
+                title: "Excluído!",
+                text: "Seu arquivo foi excluído com sucesso!",
+                icon: "success"
+                });
+
+                window.location.reload();
+            }
+
+        },
+        error: function(xhr, status, error){
+          console.log(error);
+        }
+
+    })
+
+
+  }
+});
+
+})
+
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('app_estados', function (Blueprint $table) {
+            $table->id();
+            $table->string('estado_nome');
+            $table->string('estado_uf');
+            $table->string('estado_regiao')->nullable();
+            $table->integer('usuario')->nullable();
+            $table->integer('cliente')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('estados');
+    }
+};

@@ -1,0 +1,16 @@
+body {
+  background: #eef2f7;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.btn-lg {
+  font-size: 1.2rem;
+}
+
+#tabela-itens tbody tr:hover {
+  background: #e5f1ff;
+}
