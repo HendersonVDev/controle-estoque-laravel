@@ -32,6 +32,18 @@ Cadastro e gerenciamento simples de estoque
 
 Criação automática de usuário de teste via seeder
 
+## 🖼️ Telas do Sistema
+
+### Tela de Login
+![Tela de Login](assets/readme/login.png)
+
+### Dashboard
+![Tela de Login](assets/readme/dashboard.png)
+
+### Estoque
+![Dashboard](assets/readme/estoque.png)
+
+
 🔐 Acesso de Teste
 
 Usuário criado automaticamente via seeder:
