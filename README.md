@@ -34,14 +34,12 @@ Criação automática de usuário de teste via seeder
 
 ## 🖼️ Telas do Sistema
 
-### Tela de Login
-![Tela de Login](assets/readme/login.png)
+![Tela de Login](https://raw.githubusercontent.com/HendersonVDev/controle-estoque-laravel/main/assets/readme/login.png)
 
-### Dashboard
-![Tela de Login](assets/readme/dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/HendersonVDev/controle-estoque-laravel/main/assets/readme/dashboard.png)
 
-### Estoque
-![Dashboard](assets/readme/estoque.png)
+![Estoque](https://raw.githubusercontent.com/HendersonVDev/controle-estoque-laravel/main/assets/readme/estoque.png)
+
 
 
 🔐 Acesso de Teste
